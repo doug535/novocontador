@@ -1,6 +1,7 @@
 style
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,11 +14,47 @@ body {
     align-items: center;
 }
 
-section {
+.titulo {
     background-color: blue;
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
 
+}
+
+#CorpoDoContador {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: brown;
+    
+}
+
+.contador {
+    
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    color: antiquewhite;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 p{

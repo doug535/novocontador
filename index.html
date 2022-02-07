@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer ></script>
 </head>
 <body>
     
-    <section>
+    <section id="CorpoDoContador">
         
-        <h1>CONTADOR</h1>
-        <button onclick="subtrair()">-</button>
-        <p id = "#resultado">0</p>
+        <div class="titulo">
+            <h1>CONTADOR</h1>
+        </div>
+        
+        <div class="contador">
+         <button onclick="subtrair()">-</button>
+        <p id = "resultado">0</p>
         <button onclick="adicionar()">+</button>
-        
+        <div id="MaisZeroMenos"></div>
+        </div>
+
     </section>
     
-    <script src="script.js"></script>
    </body>
 </html>
