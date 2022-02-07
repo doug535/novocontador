@@ -4,18 +4,18 @@ let numero = 0
 
 //alteradores de estado da aplicação
 function adicionar() {
- numero = numero+1
+ numero++
  mostrarNaTela ()   
 }
 
 function subtrair() {
- numero = numero-1  
+ numero--
  mostrarNaTela ()
 }
 
 //atualizar estado da aplicação na tela
 function mostrarNaTela () {
-    const p = document.querySelector("p")
+    const p = document.querySelector("#resultado")
     p.innerText = numero
 }
 
