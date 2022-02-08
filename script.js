@@ -1,11 +1,11 @@
 //estado da minha aplicação
-
+const body = document.querySelector("body")
 let numero = 0
 
 //alteradores de estado da aplicação
 function adicionar() {
  numero++
- mostrarNaTela ()   
+ mostrarNaTela () 
 }
 
 function subtrair() {
@@ -18,6 +18,8 @@ function mostrarNaTela () {
     const p = document.querySelector("#resultado")
     p.innerText = numero
 }
-
+if(numero == 10) {
+    body.style.backgroundColor = "#0000"
+}
 //iniciar
 mostrarNaTela ()
