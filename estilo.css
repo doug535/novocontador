@@ -47,7 +47,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    animation: position 6s linear infinite;
     
+}
+@keyframes position {
+    0% {
+        top: calc(0% + 88px);
+        left: 100%;
+    }
+    35% {
+        top: calc(0% + 88px);
+        left: 0%;
+    }
+    50% {
+        top: calc(100% - 315px);
+        left: calc(100% - 99px);
+    }
+    85% {
+        top: calc(100% - 315px);
+        left: 0%;
+    }
+    100% {
+        top: calc(0% + 88px);
+        left: 100%;
+    }
 }
 
 h1 {
